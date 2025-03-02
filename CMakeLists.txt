@@ -303,15 +303,15 @@ endif()
 if (NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/framework/CMakeLists.txt")
     message(FATAL_ERROR "${CMAKE_CURRENT_SOURCE_DIR}/framework/CMakeLists.txt not found. Run `git submodule update --init` from the source tree to fetch the submodule contents.")
 endif()
-add_subdirectory(framework)
+# add_subdirectory(framework)
 
 add_subdirectory(include)
 
-add_subdirectory(3rdparty)
+# add_subdirectory(3rdparty)
 
 add_subdirectory(library)
 
-add_subdirectory(pkgconfig)
+# add_subdirectory(pkgconfig)
 
 #
 # The C files in tests/src directory contain test code shared among test suites
